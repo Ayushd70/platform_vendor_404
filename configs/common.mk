@@ -28,6 +28,19 @@ PRODUCT_COPY_FILES += \
     vendor/404/prebuilt/lib/libsketchology_native.so:system/lib/libsketchology_native.so \
     vendor/404/prebuilt/lib64/libsketchology_native.so:system/lib64/libsketchology_native.so
 
+# Include support for GApps backup
+PRODUCT_COPY_FILES += \
+    vendor/404/prebuilt/bin/backuptool.sh:install/bin/backuptool.sh \
+    vendor/404/prebuilt/bin/backuptool.functions:install/bin/backuptool.functions \
+    vendor/404/prebuilt/bin/50-backuptool.sh:system/addon.d/50-backuptool.sh
+
+ifeq ($(AB_OTA_UPDATER),true)
+PRODUCT_COPY_FILES += \
+    vendor/404/prebuilt/bin/backuptool_ab.sh:system/bin/backuptool_ab.sh \
+    vendor/404/prebuilt/bin/backuptool_ab.functions:system/bin/backuptool_ab.functions \
+    vendor/404/prebuilt/bin/backuptool_postinstall.sh:system/bin/backuptool_postinstall.sh
+endif
+
 # Packages
 include vendor/404/configs/packages.mk
 
