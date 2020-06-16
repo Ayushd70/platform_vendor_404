@@ -42,6 +42,15 @@ PRODUCT_PACKAGES += \
     SlateForOnePlus-Medium.ttf \
     SlateForOnePlus-Regular.ttf
 
+# Poppins family
+PRODUCT_PACKAGES += \
+    Poppins-Bold.ttf \
+    Poppins-BoldItalic.ttf \
+    Poppins-Italic.ttf \
+    Poppins-Medium.ttf \
+    Poppins-MediumItalic.ttf \
+    Poppins-Regular.ttf
+
 # rubik family
 PRODUCT_PACKAGES += \
     Rubik-BoldItalic.ttf \

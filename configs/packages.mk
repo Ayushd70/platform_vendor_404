@@ -42,7 +42,8 @@ PRODUCT_PACKAGES += p404-overlays
 
 # FontOverlays
 PRODUCT_PACKAGES += \
-    FontGoogleSansOverlay
+    FontGoogleSansOverlay \
+    FontPoppinsOverlay
 
 # Device Personalization Services
 PRODUCT_PACKAGES += MatchmakerPrebuilt

@@ -45,6 +45,14 @@ font_src_files := \
     SlateForOnePlus-Medium.ttf \
     SlateForOnePlus-Regular.ttf
 
+font_src_files := \
+    Poppins-Bold.ttf \
+    Poppins-BoldItalic.ttf \
+    Poppins-Italic.ttf \
+    Poppins-Medium.ttf \
+    Poppins-MediumItalic.ttf \
+    Poppins-Regular.ttf
+
 $(foreach f, $(font_src_files), $(call build-one-font-module, $(f)))
 
 build-one-font-module :=
